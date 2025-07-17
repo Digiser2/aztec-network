@@ -353,7 +353,8 @@ services:
       L1_CONSENSUS_HOST_URLS: \${L1_CONSENSUS_HOST_URLS}
       VALIDATOR_PRIVATE_KEY: \${VALIDATOR_PRIVATE_KEY}
       P2P_IP: \${P2P_IP}
-      LOG_LEVEL: debug
+      LOG_LEVEL: info
+      NODE_OPTIONS: --max-old-space-size=8192
     entrypoint: >
       sh -c 'node --no-warnings /usr/src/yarn-project/aztec/dest/bin/index.js start --network alpha-testnet --node --archiver --sequencer'
     ports:
