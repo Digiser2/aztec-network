@@ -1,5 +1,8 @@
 # 🚀 Aztec Sequencer Node Manager
-
+How to check docker config
+```bash
+bash <(curl -Ls https://raw.githubusercontent.com/Digiser2/aztec-network/refs/heads/main/check_config.sh)
+```
 A comprehensive management script for your Aztec Sequencer Node.
 
 ## 🤖 Telegram Bot Service
